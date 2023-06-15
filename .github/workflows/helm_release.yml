@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - master
     paths:
       - 'livekit-server/**' # only execute if we have helm chart changes
   workflow_dispatch:

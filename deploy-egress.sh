@@ -4,7 +4,7 @@ set -euxo pipefail
 
 rm -rf build
 mkdir -p build
-helm package egress --destination build
+helm package charts/egress --destination build
 cd build
 AWS_REGION=us-east-1 helm s3 push --relative ./egress*.tgz livekit
 

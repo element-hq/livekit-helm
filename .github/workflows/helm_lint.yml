@@ -13,12 +13,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Lint Helm
+      - name: Lint Helm (livekit-server)
         uses: WyriHaximus/github-action-helm3@v3
         with:
-          exec: helm lint ./livekit-server
+          exec: helm lint ./charts/livekit-server
+
+      - name: Lint Helm (egress)
+        uses: WyriHaximus/github-action-helm3@v3
+        with:
+          exec: helm lint ./charts/egress
+
+      - name: Lint Helm (ingress)
+        uses: WyriHaximus/github-action-helm3@v3
+        with:
+          exec: helm lint ./charts/ingress
 
       - name: Validate
         uses: nlamirault/helm-kubeconform-action@v0.1.0
         with:
-          charts: ./
+          charts: ./charts

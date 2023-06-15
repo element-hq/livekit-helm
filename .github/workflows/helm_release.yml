@@ -6,7 +6,7 @@ on:
       - main
       - master
     paths:
-      - 'livekit-server/**' # only execute if we have helm chart changes
+      - 'charts/**' # only execute if we have helm chart changes
   workflow_dispatch:
 
 jobs:
@@ -36,5 +36,5 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
-          config: cr.yaml
-          charts_dir: ./
+          config: charts/cr.yaml
+          charts_dir: charts

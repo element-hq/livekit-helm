@@ -1,0 +1,44 @@
+apiVersion: v1
+entries:
+  egress:
+  - apiVersion: v2
+    appVersion: v1.7.1
+    created: "2023-06-15T20:15:22.833294306Z"
+    description: Egress is used by LiveKit to stream and record rooms.
+    digest: 1a57d2714af19b77d619a0820a44f75298db7bc3659af5e136d93b79907a805f
+    name: egress
+    sources:
+    - https://github.com/livekit/egress
+    type: application
+    urls:
+    - https://github.com/vector-im/livekit-helm/releases/download/egress-1.7.1/egress-1.7.1.tgz
+    version: 1.7.1
+  ingress:
+  - apiVersion: v2
+    appVersion: v0.9.0
+    created: "2023-06-15T20:15:23.06642224Z"
+    description: Ingress is used by LiveKit to ingest streams produced by external
+      workflows
+    digest: 6fa726dffab598a389eda2a0694925e0993bb95bf91f775fd82907ce802eb78f
+    name: ingress
+    sources:
+    - https://github.com/livekit/ingress
+    type: application
+    urls:
+    - https://github.com/vector-im/livekit-helm/releases/download/ingress-0.9.0/ingress-0.9.0.tgz
+    version: 0.9.0
+  livekit-server:
+  - apiVersion: v2
+    appVersion: v1.4.3
+    created: "2023-06-15T20:15:23.288811922Z"
+    description: Open source WebRTC infrastructure. Host your own real-time video/audio
+      experiences.
+    digest: 6167233c5d08bd4dad6c8e2fae224a7f4274cc01cb2105e824c43efba8ff4ba3
+    name: livekit-server
+    sources:
+    - https://github.com/livekit/livekit
+    type: application
+    urls:
+    - https://github.com/vector-im/livekit-helm/releases/download/livekit-server-1.4.3/livekit-server-1.4.3.tgz
+    version: 1.4.3
+generated: "2023-06-15T20:15:23.288818322Z"

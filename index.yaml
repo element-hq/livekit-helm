@@ -13,6 +13,18 @@ entries:
     urls:
     - https://github.com/vector-im/livekit-helm/releases/download/egress-1.7.1/egress-1.7.1.tgz
     version: 1.7.1
+  - apiVersion: v2
+    appVersion: v1.7.1
+    created: "2023-06-15T20:22:17.190741393Z"
+    description: Egress is used by LiveKit to stream and record rooms.
+    digest: 1b8e384b8a9bddb037d9f3c8282cd2f6f76346d748d54ac5b583d99c37ead098
+    name: egress
+    sources:
+    - https://github.com/livekit/egress
+    type: application
+    urls:
+    - https://github.com/vector-im/livekit-helm/releases/download/egress-1.7.1-element01/egress-1.7.1-element01.tgz
+    version: 1.7.1-element01
   ingress:
   - apiVersion: v2
     appVersion: v0.9.0
@@ -27,6 +39,19 @@ entries:
     urls:
     - https://github.com/vector-im/livekit-helm/releases/download/ingress-0.9.0/ingress-0.9.0.tgz
     version: 0.9.0
+  - apiVersion: v2
+    appVersion: v0.9.0
+    created: "2023-06-15T20:22:17.36103556Z"
+    description: Ingress is used by LiveKit to ingest streams produced by external
+      workflows
+    digest: 0246711066a62a5a7aead95a239a97dec4a3dfb194fbf6ab87f56cf8527183b6
+    name: ingress
+    sources:
+    - https://github.com/livekit/ingress
+    type: application
+    urls:
+    - https://github.com/vector-im/livekit-helm/releases/download/ingress-0.9.0-element01/ingress-0.9.0-element01.tgz
+    version: 0.9.0-element01
   livekit-server:
   - apiVersion: v2
     appVersion: v1.4.3
@@ -41,4 +66,17 @@ entries:
     urls:
     - https://github.com/vector-im/livekit-helm/releases/download/livekit-server-1.4.3/livekit-server-1.4.3.tgz
     version: 1.4.3
-generated: "2023-06-15T20:15:23.288818322Z"
+  - apiVersion: v2
+    appVersion: v1.4.3
+    created: "2023-06-15T20:22:17.556406966Z"
+    description: Open source WebRTC infrastructure. Host your own real-time video/audio
+      experiences.
+    digest: d1572fac6a86d00e06388e31e8840aed7858eade2bd50936eb75a107eb750daa
+    name: livekit-server
+    sources:
+    - https://github.com/livekit/livekit
+    type: application
+    urls:
+    - https://github.com/vector-im/livekit-helm/releases/download/livekit-server-1.4.3-element01/livekit-server-1.4.3-element01.tgz
+    version: 1.4.3-element01
+generated: "2023-06-15T20:22:17.556422566Z"

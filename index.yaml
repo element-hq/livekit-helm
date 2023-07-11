@@ -67,6 +67,19 @@ entries:
     - https://github.com/vector-im/livekit-helm/releases/download/livekit-server-1.4.3/livekit-server-1.4.3.tgz
     version: 1.4.3
   - apiVersion: v2
+    appVersion: v1.4.4
+    created: "2023-07-11T17:28:54.638915267+02:00"
+    description: Open source WebRTC infrastructure. Host your own real-time video/audio
+      experiences.
+    digest: d9be5062b9bbea57f86a3665c607361276f5b87f695908d32e24f2e9f89b2513
+    name: livekit-server
+    sources:
+    - https://github.com/livekit/livekit
+    type: application
+    urls:
+    - https://github.com/vector-im/livekit-helm/releases/download/livekit-server-1.4.3-element02/livekit-server-1.4.3-element02.tgz
+    version: 1.4.3-element02
+  - apiVersion: v2
     appVersion: v1.4.3
     created: "2023-06-15T20:22:17.556406966Z"
     description: Open source WebRTC infrastructure. Host your own real-time video/audio
@@ -79,4 +92,4 @@ entries:
     urls:
     - https://github.com/vector-im/livekit-helm/releases/download/livekit-server-1.4.3-element01/livekit-server-1.4.3-element01.tgz
     version: 1.4.3-element01
-generated: "2023-06-15T20:22:17.556422566Z"
+generated: "2023-07-11T17:28:54.638943409+02:00"

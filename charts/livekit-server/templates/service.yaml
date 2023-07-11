@@ -21,10 +21,12 @@ spec:
   type: LoadBalancer
   {{- end }}
   ports:
+    {{- if (ne .Values.loadBalancer.type "disable") }}
     - port: {{ .Values.loadBalancer.servicePort }}
       targetPort: http
       protocol: TCP
       name: http
+    {{- end}}
     {{- if and (eq .Values.loadBalancer.type "disable") .Values.livekit.rtc.tcp_port }}
     - name: rtc-tcp
       port: {{ .Values.livekit.rtc.tcp_port }}

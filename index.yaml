@@ -81,6 +81,19 @@ entries:
     version: 1.4.3-element02
   - apiVersion: v2
     appVersion: v1.4.3
+    created: "2024-05-15T13:26:14.414710332Z"
+    description: Open source WebRTC infrastructure. Host your own real-time video/audio
+      experiences.
+    digest: 804c3df336e4250d7b788d744b4e1d77b21fc05b1da84d8ea3cb8c048950f964
+    name: livekit-server
+    sources:
+    - https://github.com/livekit/livekit
+    type: application
+    urls:
+    - https://github.com/element-hq/livekit-helm/releases/download/livekit-server-1.4.3-element02/livekit-server-1.4.3-element02.tgz
+    version: 1.4.3-element02
+  - apiVersion: v2
+    appVersion: v1.4.3
     created: "2023-06-15T20:22:17.556406966Z"
     description: Open source WebRTC infrastructure. Host your own real-time video/audio
       experiences.
@@ -92,4 +105,4 @@ entries:
     urls:
     - https://github.com/vector-im/livekit-helm/releases/download/livekit-server-1.4.3-element01/livekit-server-1.4.3-element01.tgz
     version: 1.4.3-element01
-generated: "2023-07-11T17:28:54.638943409+02:00"
+generated: "2024-05-15T13:26:14.414746099Z"

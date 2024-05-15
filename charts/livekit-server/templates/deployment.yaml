@@ -73,7 +73,6 @@ spec:
             {{- if .Values.livekit.rtc.tcp_port }}
             - name: rtc-tcp
               containerPort: {{ .Values.livekit.rtc.tcp_port }}
-              hostPort: {{ .Values.livekit.rtc.tcp_port }}
               protocol: TCP
             {{- end }}
             {{- if .Values.livekit.prometheus_port }}
